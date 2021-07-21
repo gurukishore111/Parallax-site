@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/AlphaCentauri/Alphacentauri-MVY4p.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins",sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    background: #000;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.logo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+nav .nav-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-links ul li{
+  padding: 0 0.4rem;
+  list-style: none;
+}
+
+nav .nav-links ul li img{
+  transform: scale(0.45);
+}
+
+section{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* background */
+
+.bg img{
+    width: 110vw;
+    height: 110vh;
+    filter: brightness(0.6);
+}
+
+.rock-1{
+ position: absolute;
+ left: 10vw !important;
+ top:20vh !important;
+}
+
+.rock-1 img{
+    width: 40%;
+    filter: brightness(0.5);
+}
+
+.text h1{
+    font-family: "myFirstFont" !important;
+    font-size: 6vw;
+    color: #fff;
+    letter-spacing: 2rem;
+    position: absolute;
+    top:35vh;
+    left:30vw;   
+}
+
+.earth {
+    position: absolute;
+    left: 30vw !important;
+    top:10vh !important;
+}
+
+.earth img{
+    width: 60%;
+    filter: brightness(0.6);
+}
+
+.rocket img{
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    left:34vw;
+    top:17vh;
+    z-index: 1;
+    filter: brightness(0.7);
+} 
+
+.mid{
+    left:-15rem !important;
+    bottom: -10rem !important;
+    top:unset !important
+}
+
+.mid img{
+    width: 100%;
+    z-index: 2;
+    left:-2rem;
+    top:20vh !important;
+    filter: brightness(0.8);
+}
+
+.fore{
+    right: -5rem !important;
+    bottom: -20rem !important;
+    top: 0px  !important;
+    left:unset !important;
+}
+
+.fore img{
+    width: 40rem;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+
+/* slider  */
+
+#section-two {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .rockbg1 {
+    position: absolute;
+    transform: scale(0.2);
+    filter: brightness(0.2);
+    top: 20vh;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .planet-links {
+    width: 95%;
+    height: 5vh;
+    color: #fff;
+    /* position: absolute;
+    bottom: 0; */
+    margin-top:2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  .planet-links .swiper-pagination-bullet {
+    opacity: 0.2;
+    outline: none;
+  }
+  .planet-links .swiper-pagination-bullet-active {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: transparent;
+  }
+  
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px 0;
+  }
+  
+  .swiper-wrapper {
+    transition-delay: 0.5s;
+  }
+  
+  .swiper-slide {
+    height: 400px !important;
+    width: 90% !important;
+    background: transparent;
+  }
+  
+  .swiper-slide:nth-child(1) .slide-img {
+    background-image: url("images/mercury.png");
+  }
+  .swiper-slide:nth-child(2) .slide-img {
+    background-image: url("images/venus.png");
+  }
+  .swiper-slide:nth-child(3) .slide-img {
+    background-image: url("images/earth1.png");
+  }
+  .swiper-slide:nth-child(4) .slide-img {
+    background-image: url("images/mars.png");
+  }
+  .swiper-slide:nth-child(5) .slide-img {
+    background-image: url("images/jupiter.png");
+  }
+  .swiper-slide:nth-child(6) .slide-img {
+    background-image: url("images/saturn.png");
+  }
+  .swiper-slide:nth-child(7) .slide-img {
+    background-image: url("images/uranus.png");
+  }
+  .swiper-slide:nth-child(8) .slide-img {
+    background-image: url("images/neptune.png");
+  }
+  
+  .slide-img {
+    background-position: "center";
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .slide-number {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .slide-number p {
+    font-size: 40px;
+    font-family: "myFirstFont" !important;
+    color: #fff;
+    position: relative;
+  }
+  
+  .slide-number p span {
+    position: absolute;
+  }
+  
+  .slide-detail {
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide-detail p {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+  }
+  
+  .slide-detail p span {
+    position: absolute;
+  }
+  
+  .slide-detail-facts {
+    position: absolute;
+    top: 240px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .slide-detail-facts div {
+    display: flex;
+    position: relative;
+  }
+  .slide-detail-facts div h5 {
+    margin-right: 20px;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: -150px;
+    left: 22%;
+    z-index: 9;
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0.1 !important;
+  }
+  
+  .slide-text h4 {
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+  }
+  .slide-text h4 span {
+    position: absolute;
+  }
+  
